@@ -1,0 +1,1 @@
+This project focuses on HTML/CSS to re-create the youtube homepage - in particular the media elements.
