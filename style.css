@@ -1,0 +1,310 @@
+/* universal */
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	display: block;
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 18px;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f9f9f9;
+	overflow-y: scroll;
+}
+
+h1 {
+	font-size: 18px;
+	font-weight: normal;
+}
+h3 {
+	font-size: 14px;
+	margin-bottom: 0;
+	font-weight: 500;
+}
+
+/* header */
+header {
+	display: inline-flex;
+	background-color: white;
+	height: 56px;
+	width: 100%;
+	padding: 5px 0;
+	position: fixed;
+	margin-bottom: 10px;
+	z-index: 99;
+}
+
+nav {
+	background-color: white;
+	width: 30%;
+	height: 100%;
+}
+
+
+/* search box */
+.search-bar {
+	width: 100%;
+	height: 100%;
+	max-width: 600px;
+	margin: auto;
+	background-color: white;
+	padding-top: 5px;
+}
+
+#search-form {
+	min-width: 300px;
+	width: 100%;
+	display: flex;
+	position: relative;
+}
+
+.search-input {
+	width: 100%;
+	font-size: 20px;
+	color: rgb(87, 87, 87);
+	border: 1px solid rgb(128, 128, 128);
+	border-right: none;
+	height: 32px;
+	border-radius: 1px 0 0 1px;
+	outline: none;
+	color: #9DBFAF;
+	padding-left: 6px;
+}
+
+.search-button {
+	width: 40px;
+	height: 36px;
+	border: 1px solid #00B4CC;
+	text-align: center;
+	background-color: rgb(211, 211, 211);
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.magnify {
+	height: 1.1em;
+	background-color: white;
+}
+
+
+/* header nav icons */
+.left-icons {
+	min-width: 200px;
+	width: 200px;
+}
+
+.right-icons {
+	float: right;
+	min-width: 300px;
+	width: 300px;
+    padding-left: 100px;
+    height: 60px
+}
+
+.left-icons img, .right-icons img {
+	height: 45%;
+	padding: 8px 6px;
+	cursor: pointer;
+}
+
+
+/* main body content */
+.cols {
+	position: relative;
+	padding-top: 100px;
+	width: 85%;
+	margin: auto;
+	display: flex;
+}
+
+
+/* generic left column on page */
+.left-col {
+	float: left;
+	width: 65%;
+	display: block;
+	padding-right: 30px;
+	min-width: 480px;
+}
+
+
+/* main video */
+.main-video {
+	background-color: green;
+	height: 0;
+	width: 100%;
+	position: relative;
+	padding-bottom: 56.25%;
+	overflow: hidden;
+}
+
+.main-video iframe {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+
+/* main-video-info area */
+.main-video-info {
+	background-color: #f9f9f9;
+	margin-top: 20px;
+	min-height: 100px;
+}
+
+.main-video-info p {
+	color: grey;
+	font-size: 14px;
+}
+.main-video-info img {
+	height: 24px;
+	float: right;
+	margin-bottom: 0;
+	cursor: pointer;
+}
+
+
+/* description area */
+.description {
+	background-color: #f9f9f9;
+	min-height: 150px;
+	margin-top: 20px;
+	font-size: 14px;
+}
+
+#tasty {
+	border-radius: 50%;
+	float: left;
+	width: 40px;
+	cursor: pointer;
+}
+
+#subscribe {
+	float: right;
+	height: 35px;
+	cursor: pointer;
+}
+
+.description-text {
+	display: inline-block;
+	padding-left: 5px;
+}
+.description a {
+	text-decoration: none;
+}
+
+#author {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#show-more {
+	cursor: pointer;
+}
+
+#subscribers, #show-more {
+	color: gray;
+}
+
+
+/* comments area */
+.comments {
+	background-color: #f9f9f9;
+	min-height: 300px;
+}
+
+.top-of-comments {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	height: 30px;
+}
+
+#sort-by {
+	margin-left: 30px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.make-comment {
+	width: 100%;
+	margin: 5px 0;
+	padding: 5px 0;
+}
+
+.make-comment input {
+	width: 75%;
+	padding-left: 10px;
+	margin-left: 10px;
+	height: 25px;
+	background-color: #f9f9f9;
+	border: none;
+}
+.logo {
+	border-radius: 50%;
+	background-color: magenta;
+	padding: 5px 10px;
+	color: white;
+	float: left;
+	cursor: pointer;
+}
+
+.comment-text {
+	display: inline-block;
+	padding-left: 10px;
+	font-size: 14px;
+	max-width: 500px;
+	margin-top: 10px;
+}
+
+.comment-date, .comment-react {
+	color: gray;
+}
+
+.comment-react {
+	cursor: pointer;
+}
+
+.view-replies {
+	color: blue;
+	cursor: pointer;
+}
+
+
+/* sidebar */
+aside {
+	background-color: #f9f9f9;
+	width: 60%;
+	height: 1000px;
+
+}
+
+.preview-box {
+	background-color: #f9f9f9;
+	margin: 5px 0;
+	display: flex;
+	align-items: flex-start;
+
+}
+
+.preview-box img {
+	padding-top: 10px;
+	padding-right: 10px;
+	width: 100%;
+	cursor: pointer;
+}
+
+.preview-text {
+    cursor: pointer;
+    
+}
+.preview-text p {
+	font-size: 13px;
+	font-weight: 500;
+	margin: 0;
+	color: grey;
+}
